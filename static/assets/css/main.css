@@ -1,0 +1,234 @@
+/* 基本樣式重置 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f4;
+}
+
+/* Header */
+#header {
+  background: #3f464f;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#header h1 {
+  font-size: 2.5em;
+}
+
+#header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+/* Menu */
+#menu {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 10000;
+}
+
+#menu .inner {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#menu ul li {
+  margin: 10px 0;
+}
+
+#menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#menu .close {
+  display: block;
+  margin-top: 20px;
+  color: #aaa;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Banner */
+#banner {
+  background: #041E42;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#banner h2 {
+  font-size: 2.5em;
+}
+
+#banner .logo span {
+  font-size: 4em;
+}
+
+/* Page Wrapper */
+#wrapper {
+  padding: 20px;
+}
+
+/* Content Section */
+.wrapper {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .inner {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.wrapper .image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.wrapper .content {
+  flex: 2;
+}
+
+.wrapper .content h2 {
+  color: #041E42;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.wrapper .content p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.wrapper .content a.special {
+  display: inline-block;
+  background: #041E42;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.wrapper .content a.special:hover {
+  background: #03336d;
+}
+
+/* 新增 Section Four */
+.wrapper.spotlight.style4 .content {
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* 右下角浮動按鈕 */
+#openSideMenu {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background: #D3D3D3;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#openSideMenu:hover {
+  background: #D3D3D3;
+}
+
+/* 右側選單 Modal */
+#sideMenuModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+#sideMenuModal .menu-box {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #3B5998;
+  color: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px 0 0 8px;
+  box-shadow: -2px 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#sideMenuModal .menu-box h2 {
+  color: white;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+#sideMenuModal .menu-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sideMenuModal .menu-box ul li {
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  text-align: center;
+}
+
+#sideMenuModal .menu-box ul li:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#sideMenuModal .menu-box .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}

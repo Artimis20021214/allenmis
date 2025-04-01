@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<!--
+    Solid State by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>張予綸的求職相關資訊</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="static/assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+    <style>
+      /* -------------------------------------------------
+         以下為新增的 CSS，用來控制右側浮動按鈕與彈出選單
+      ------------------------------------------------- */
+      /* 右下角浮動按鈕 */
+      #openSideMenu {
+        position: fixed;
+        right: 20px; /* 仍固定在右側 */
+        top: 20px; /* 從底部移到頂部 */
+        width: 50px;
+        height: 50px;
+        background: #041E42;
+        color: white;
+        font-size: 24px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10000;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+#openSideMenu:hover {
+  background: #666666; /* 添加鼠標懸停效果 */
+}
+      /* 右側選單 Modal 覆蓋層 */
+     /* Modal 覆蓋層: 使用深色半透明背景 */
+#sideMenuModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);  /* 深色背景，可依喜好調整 */
+  z-index: 9999;
+}
+
+/* Modal 內容區：置中並調整大小、圓角、陰影 */
+#sideMenuModal .menu-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;              /* 調整寬度，與參考圖片接近 */
+  background: #4a76a8;       /* 較淺的藍色，可調整成你喜歡的色調 */
+  padding: 30px;
+  border-radius: 10px;       /* 全圓角 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* 陰影增添層次感 */
+}
+
+/* 標題樣式 */
+#sideMenuModal .menu-box h2 {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* 列表樣式 */
+#sideMenuModal .menu-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sideMenuModal .menu-box ul li {
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+}
+
+/* 關閉按鈕 */
+#sideMenuModal .menu-box .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+      
+      <!-- Header -->
+      <header id="header">
+        
+      </header>
+      
+   
+      
+      
+      <!-- Banner -->
+      <section id="banner">
+        <div class="inner">
+          <div class="logo"><span class="icon fa-gem"></span></div>
+          <h2>個人簡介</h2>
+        </div>
+      </section>
+      
+      <!-- Wrapper (主要內容) -->
+      <section id="wrapper">
+        <!-- Section One: 基本資料 -->
+        <section id="one" class="wrapper spotlight style1">
+          <div class="inner">
+            <a href="#" class="image"><img src="static/assets/image/130238.jpg" alt="張予綸的照片" /></a>
+            <div class="content">
+              <h2 class="major">基本資料</h2>
+              <p>
+                姓名：張予綸<br />
+                系級：資管四B<br />
+                學號：411054113<br />
+                信箱：artmis20021214@gmail.com
+              </p>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Section Two: 高中經歷 -->
+        <section id="two" class="wrapper alt spotlight style2">
+          <div class="inner">
+            <a href="#" class="image"><img src="static/assets/image/202511.png" alt="高中經歷照片" /></a>
+            <div class="content">
+              <h2 class="major">高中大學經歷</h2>
+              <p>
+                高中口技社社長<br/>
+                高中阿卡貝拉幹部<br/>
+                去過多個城市表演過<br/>
+                系學會幹部<br/>
+                學生會幹部<br/>
+
+                <br/>
+                參與過數十場校內校外社團表演活動<br/>
+                畢業歌製作團隊
+              </p>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Section Three: 興趣專長 -->
+        <section id="three" class="wrapper spotlight style3">
+          <div class="inner">
+            <a href="#" class="image"><img src="images/travel.jpg" alt="興趣專長" /></a>
+            <div class="content">
+              <h2 class="major">興趣專長</h2>
+              <p>
+                興趣：音樂，設計<br/>
+                專長：鋼琴、唱歌
+              </p>
+            </div>
+          </div>
+        </section>
+        
+
+
+      <!-- 右下浮動按鈕，點擊後開啟右側選單 -->
+      <button id="openSideMenu">&#9776;</button>
+      
+      <!-- 右側選單 Modal -->
+      <div id="sideMenuModal">
+        <div class="menu-box">
+          <span class="close-btn">&times;</span>
+          <h2>更多資訊</h2>
+          <ul>
+            <li>個人簡介</li>
+            <li>我的測驗結果</li>
+            <li>MIS工作分析</li>
+            <li>求職履歷</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Scripts -->
+      <script src="static/assets/js/jquery.min.js"></script>
+      <script src="static/assets/js/jquery.scrollex.min.js"></script>
+      <script src="static/assets/js/browser.min.js"></script>
+      <script src="static/assets/js/breakpoints.min.js"></script>
+      <script src="static/assets/js/util.js"></script>
+      <script src="static/assets/js/main.js"></script>
+
+      
+      <!-- 自訂右側選單的 JavaScript -->
+      <script>
+        // 點擊浮動按鈕時，顯示選單 Modal
+        $("#openSideMenu").click(function(e) {
+          e.preventDefault();
+          $("#sideMenuModal").fadeIn();
+        });
+        
+        // 點擊選單 Modal 中的關閉按鈕時，隱藏 Modal
+        $("#sideMenuModal .close-btn").click(function(e) {
+          e.preventDefault();
+          $("#sideMenuModal").fadeOut();
+        });
+        
+        // 點擊 Modal 背景區域也可關閉 Modal
+        $("#sideMenuModal").click(function(e) {
+          if (e.target === this) {
+            $("#sideMenuModal").fadeOut();
+          }
+        });
+      </script>
+      
+    </div>
+  </body>
+</html>

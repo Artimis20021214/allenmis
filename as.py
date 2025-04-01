@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+    Solid State by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>朱楷翎的求職相關資訊</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+        <noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
+    </head>
+    <body class="is-preload">
+
+        <!-- Page Wrapper -->
+            <div id="page-wrapper">
+
+                <!-- Header -->
+                    <header id="header">
+                        <h1 class="major">個人簡介</h1>
+                        <nav>
+                            <a href="#menu">Menu</a>
+                        </nav>
+                    </header>
+
+                <!-- Menu -->
+                    <nav id="menu">
+                        <div class="inner">
+                            <h2>Menu</h2>
+                            <ul class="links">
+                                <li><a href="index.html">個人簡介</a></li>
+                                <li><a href="elements.html">我的測驗結果</a></li>
+                                <li><a href="generic.html">MIS工作分析</a></li>
+                                <li><a href="intro.html">求職履歷</a></li>
+                            </ul>
+                            <a href="#" class="close">Close</a>
+                        </div>
+                    </nav>
+
+                <!-- Banner -->
+                    <section id="banner">
+                        <div class="inner">
+                            <div class="logo"><span class="icon fa-gem"></span></div>
+                            <h2>個人簡介</h2>
+                        </div>
+                    </section>
+
+                <!-- Wrapper -->
+                    <section id="wrapper">
+
+                        <!-- One -->
+                            <section id="one" class="wrapper spotlight style1">
+                                <div class="inner">
+                                    <a href="#" class="image">
+                    <img src="{{ url_for('static', filename='assets/images/me.jpg') }}" alt="" />
+                  </a>
+                                    <div class="content">
+                                        <h2 class="major">基本資料</h2>
+                                        <p>
+                                            姓名:朱楷翎<br />
+                                            系級:資管二A<br />
+                                            學號:411134311<br />
+                                            信箱:a24499095a@gmail.com<br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                        <!-- Two -->
+                            <section id="two" class="wrapper alt spotlight style2">
+                                <div class="inner">
+                                    <a href="#" class="image">
+                    <img src="{{ url_for('static', filename='assets/images/show.jpg') }}" alt="" />
+                  </a>
+                                    <div class="content">
+                                        <h2 class="major">高中經歷</h2>
+                                        <p>
+                                            參加縣市合唱團比賽獲得特優<br/>
+                                            擔任班長<br/>
+                                            選為班級模範生<br/>
+                                            擔任吉他社副社長<br/>
+                                            參與過數十場校內校外社團表演活動<br/>
+                                            畢業歌製作團隊<br/>
+                                        </p>
+                                        <a href="https://www.youtube.com/watch?v=_PhDmcg6dgE" class="special">聽聽看我們團隊做的畢業歌</a>
+                                    </div>
+                                </div>
+                            </section>
+
+                        <!-- Three -->
+                            <section id="three" class="wrapper spotlight style3">
+                                <div class="inner">
+                                    <a href="#" class="image">
+                    <img src="{{ url_for('static', filename='assets/images/travel.jpg') }}" alt="" />
+                  </a>
+                                    <div class="content">
+                                        <h2 class="major">興趣專長</h2>
+                                        <p>
+                                            興趣  :  繪畫 、戶外運動 、設計 、拍照<br/>
+                                            專長  :  彈吉他 、唱歌<br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+
+                    </section>
+
+                <!-- Scripts -->
+                    <script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+                    <script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
+                    <script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+                    <script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+                    <script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+                    <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+    </body>
+</html>

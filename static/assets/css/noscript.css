@@ -1,0 +1,38 @@
+/* 基本的備用樣式，適用於未啟用 JavaScript 的瀏覽器 */
+
+/* 隱藏依賴 JavaScript 的元素 */
+#sideMenuModal, 
+#openSideMenu {
+  display: none;
+}
+
+/* 調整版面，處理因缺少 JavaScript 功能而可能影響的佈局 */
+.wrapper.spotlight {
+  display: block; /* 確保區塊垂直排列 */
+  margin-bottom: 20px;
+}
+
+.wrapper.spotlight .inner {
+  display: block; /* 停用 Flex 排版，改為塊狀顯示 */
+}
+
+.wrapper.spotlight .image {
+  margin-bottom: 15px; /* 在圖片與文字間增加間距 */
+}
+
+.wrapper.spotlight .content {
+  text-align: left; /* 確保內容對齊良好 */
+}
+
+/* 為未啟用 JavaScript 的瀏覽器提供提示信息 */
+.noscript-message {
+  display: block;
+  padding: 15px;
+  margin: 20px 0;
+  background: #ffc;
+  border: 1px solid #cc9;
+  color: #333;
+  text-align: center;
+  font-size: 1em;
+  border-radius: 4px;
+}
